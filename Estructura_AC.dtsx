@@ -1,0 +1,2261 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="7/18/2018 11:40:11 AM"
+  DTS:CreationName="SSIS.Package.3"
+  DTS:CreatorComputerName="WS2012_DB2012_B"
+  DTS:CreatorName="INTRANET\administrador"
+  DTS:DTSID="{D9821BA7-7A65-4453-97DF-2FBD39F7F9BC}"
+  DTS:ExecutableType="SSIS.Package.3"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
+  DTS:LocaleID="3082"
+  DTS:ObjectName="Estructura_AC"
+  DTS:PackageType="5"
+  DTS:VersionBuild="285"
+  DTS:VersionGUID="{BBED00A8-3D4F-4CBE-8769-5A2330BD84BD}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">6</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[192.168.1.157.DWHSource]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{29CEF6A8-5C2B-43AD-A89A-EB9F8A52BDE3}"
+      DTS:ObjectName="192.168.1.157.DWHSource">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=192.168.1.157;Initial Catalog=DWHSource;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[192.168.1.157.DWHSource 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{D5ACE9DC-3A53-4CF7-9136-35826B2E4518}"
+      DTS:ObjectName="192.168.1.157.DWHSource 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=192.168.1.157;Initial Catalog=DWHSource;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[192.168.1.157.DWHSource 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{2B56C622-562C-4251-9AE9-4ACD4D3AAA02}"
+      DTS:ObjectName="192.168.1.157.DWHSource 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=192.168.1.157;Initial Catalog=DWHSource;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[192.168.1.157.DWHSource 3]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{737738F9-14BF-4091-90EA-7FCBB6B0F2A1}"
+      DTS:ObjectName="192.168.1.157.DWHSource 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=192.168.1.157;Initial Catalog=DWHSource;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[192.168.1.157.DWHSource1]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{3DD4A15D-2E53-42CE-9C9E-2A36CE16C93E}"
+      DTS:ObjectName="192.168.1.157.DWHSource1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=192.168.1.157;Initial Catalog=DWHSource;Integrated Security=True;Application Name=SSIS-Package-{3DD4A15D-2E53-42CE-9C9E-2A36CE16C93E}192.168.1.105.DWHSource1;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[192.168.1.157.DWHStagingArea]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{8083C130-4AAC-4B6F-AF0C-8A3EDA82D3CB}"
+      DTS:ObjectName="192.168.1.157.DWHStagingArea">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=192.168.1.157;Initial Catalog=DWHStagingArea;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[192.168.1.157.DWHStagingArea 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{8F83F41B-F4AC-4E79-A581-3854FC8B29BD}"
+      DTS:ObjectName="192.168.1.157.DWHStagingArea 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=192.168.1.157;Initial Catalog=DWHStagingArea;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[192.168.1.157.DWHUCSH]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{9FE19BE9-A60F-4896-8E80-941DE080422A}"
+      DTS:ObjectName="192.168.1.157.DWHUCSH">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=192.168.1.157;Initial Catalog=DWHUCSH;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[192.168.1.157.DWHUCSH 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{B606EFC6-95AA-4344-99A6-B73283CB59BA}"
+      DTS:ObjectName="192.168.1.157.DWHUCSH 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=192.168.1.157;Initial Catalog=DWHUCSH;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[error2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{0DB1996F-C3E3-475B-AD7A-7AED49DCB987}"
+      DTS:ObjectName="error2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="3082"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\DATA SQL2019\UCSH_BI\SSIS\105_IS_AltertaTempranaNuevo\error\error.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="vcurs_carr"
+              DTS:DTSID="{ACB4108B-55AE-4E0D-AB6C-3F2ADA601FDF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="vcarr_desc"
+              DTS:DTSID="{D0C5041F-36BE-497E-A9E5-95291AC02FDE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="vescu_codi"
+              DTS:DTSID="{A7EE2759-3906-489B-849A-D4021E378B14}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="60"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="vescu_desc"
+              DTS:DTSID="{F9F623B5-DD68-4F8C-8768-A1932DF82C51}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="vfacu_codi"
+              DTS:DTSID="{2EA96608-5C30-48B2-A473-81E18BA9C27E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="60"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="vfacu_desc"
+              DTS:DTSID="{7FB78620-E32D-4165-853F-B058BE8B039C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{A7C0DE1E-1F7B-40C9-ACDF-02F4F262B473}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{34B2306B-F89B-4F6D-97CF-B7B0DF201777}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="anio"
+              DTS:DTSID="{7E99CA5E-678E-486B-8117-473E2DFAA22B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="vepe"
+              DTS:DTSID="{19779DBD-59E4-4403-B1B5-861F35196BEB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="asig"
+              DTS:DTSID="{169EE313-0834-430A-909A-F282C7D04F8C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="secc"
+              DTS:DTSID="{79335E94-52FC-4EBB-B9C3-71BB3DF77A69}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[error3]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{CBBF7669-20A9-4EF2-A51D-3A72042024E7}"
+      DTS:ObjectName="error3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="3082"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="E:\DATA SQL2019\UCSH_BI\SSIS\105_IS_AltertaTempranaNuevo\error\error2.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="vcurs_carr"
+              DTS:DTSID="{9E9F7AC0-976B-401A-8E0F-C60A0F7A8BAD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="vcarr_desc"
+              DTS:DTSID="{91291FB8-3523-4D2F-A2FA-99F2252046BC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="3"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="vescu_codi"
+              DTS:DTSID="{8E7714C5-A1F6-451C-B250-CB9B9D27968C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="60"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="vescu_desc"
+              DTS:DTSID="{C0784BB6-7D4A-4849-99FC-6A26DA2C8397}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="2"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="vfacu_codi"
+              DTS:DTSID="{CABD1148-AC6B-46C7-B315-2771BBFFE2FC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="60"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="vfacu_desc"
+              DTS:DTSID="{AAFC29FA-EBA8-4B1F-A830-8B31A1785202}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorCode"
+              DTS:DTSID="{0C7EFE85-8728-43BB-9B88-B60A44B27FFA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ErrorColumn"
+              DTS:DTSID="{9BB02478-A186-40FF-B3E7-9A0034563D54}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="anio"
+              DTS:DTSID="{22FD0A06-CED8-4866-898F-565A8F6F5E16}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="vepe"
+              DTS:DTSID="{FCCC058A-8DE4-48FF-BEB3-C68AAEFD9393}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="asig"
+              DTS:DTSID="{C578D623-B6A0-48BF-A4F5-04C964930D89}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="secc"
+              DTS:DTSID="{2332C87C-34B8-4B54-B9CD-B529B3AE5E01}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ucsh@saes_soc.informix]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{4361759D-9C9B-4593-B07E-2CCD45DBB4A9}"
+      DTS:ObjectName="ucsh@saes_soc.informix">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=ucsh@saes_soc;User ID=informix;Provider=Ifxoledbc.4;Persist Security Info=True;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv5Ski4UmcUuTeiKmBc3dcQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADEidv/Cpz8OHY6NWrgfP7MAAAAAASAAACgAAAAEAAAAOMbU4d0J0avOtrtOAPC1+4YAAAAHtWmqDHSdUzLViQn083V1jJRsNJZ4ljEFAAAAC3X/HwuwjMKbNsa/wGzurV8lNzU</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ucsh@saes_soc.informix 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{6A0700F5-2C4D-4432-A762-D0F8E9CF6F23}"
+      DTS:ObjectName="ucsh@saes_soc.informix 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=ucsh@saes_soc;User ID=informix;Provider=Ifxoledbc.4;Persist Security Info=True;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv5Ski4UmcUuTeiKmBc3dcQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAULGrwn1E7uphizuPITnKsAAAAAASAAACgAAAAEAAAAJCybEXZva8nkBjH0AYbHrMYAAAAdgIGNcUxKIUJzFZgqeAfVT+4LPnCync4FAAAACFzihP8iJq95/1ebLeWbCBwjjFN</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ucsh@saes_soc.informix 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{4F3CEAA1-1827-492F-97AC-50D4F30D5F9B}"
+      DTS:ObjectName="ucsh@saes_soc.informix 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=ucsh@saes_soc;User ID=informix;Provider=Ifxoledbc.4;Persist Security Info=True;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv5Ski4UmcUuTeiKmBc3dcQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADV39Za1BRv9QOZ2ci41VLWAAAAAASAAACgAAAAEAAAAMtJ1387tF3+L4Hvuu6ackwYAAAAywJr47byCHnVDxYfP2rREVm/BKSsPdp7FAAAAIZZG4JsXIXVyYgVxzmrnjulMo8D</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[ucsh@saes_soc.informix1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{535DDF45-949E-4664-AFFA-E80437761D1C}"
+      DTS:ObjectName="ucsh@saes_soc.informix1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=ucsh@saes_soc;User ID=informix;Provider=Ifxoledbc.4;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv5Ski4UmcUuTeiKmBc3dcQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABg/moErgnIgtzsEDBmGsYfAAAAAASAAACgAAAAEAAAAFn1btDe7eAyZSjDbjuS6OAYAAAADnrhVO/27kzdCb0SRSQWb75CkGlQi4ZcFAAAAAFTZUgl2wegacfp91TuRKNE8J0K</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{50637FBD-43A7-4AA6-8D2F-A7E968BBD207}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="ANIO">
+      <DTS:VariableValue
+        DTS:DataType="3">2023</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{534B17BD-AC39-451A-87F2-A5AB90DEB5E4}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="asignatura">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{56DC8415-C185-44DC-BE36-8FCBD094B5E6}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="asignaturas">
+      <DTS:VariableValue
+        DTS:DataSubType="ManagedSerializable"
+        DTS:DataType="13">
+        <SOAP-ENV:Envelope xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+          <SOAP-ENV:Body>
+            <xsd:anyType
+              id="ref-1"></xsd:anyType>
+          </SOAP-ENV:Body>
+        </SOAP-ENV:Envelope>
+      </DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{76A2C0B1-5AF7-4CA0-9131-CBC80705E546}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="contador">
+      <DTS:VariableValue
+        DTS:DataType="3">2018</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{34CA44A5-BC28-42AD-8019-6A4B4207DBC6}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="contadorvepe">
+      <DTS:VariableValue
+        DTS:DataType="3">2</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{E4356337-5AFF-428D-BCDF-2EB09642F91D}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="con_estructura">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A2F2F4CF-B789-4D85-B7EF-B6CA45B57246}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="LEFT(  ( DT_WSTR, 50)  GETDATE(), 10)"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FECHA_HOY">
+      <DTS:VariableValue
+        DTS:DataType="8">2023-11-17</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{974BFDFE-4600-40CB-B340-2090B7B6970F}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="fecha_inicio_clases">
+      <DTS:VariableValue
+        DTS:DataType="8">2019-08-05</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{098E06EE-E0F5-45DC-BB30-6DDF9A44E81C}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="fecha_termino_clases">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{275F0B5D-D059-4E11-A20E-E8FAEAAA0FFE}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="seccion">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{769DB443-732A-420B-B142-E82357BEC9D8}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="secciones">
+      <DTS:VariableValue
+        DTS:DataSubType="ManagedSerializable"
+        DTS:DataType="13">
+        <SOAP-ENV:Envelope xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+          <SOAP-ENV:Body>
+            <xsd:anyType
+              id="ref-1"></xsd:anyType>
+          </SOAP-ENV:Body>
+        </SOAP-ENV:Envelope>
+      </DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{8B72E2FF-0DC7-4DA6-AE1F-370C8FF269B4}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="VEPE">
+      <DTS:VariableValue
+        DTS:DataType="3">2</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Contenedor de secuencias 7"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Contenedor de secuencias"
+      DTS:DTSID="{E0CBB7CF-7F10-4D23-9BD3-5256FFDD99FC}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Contenedor de secuencias 7">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach"
+          DTS:CreationName="STOCK:FOREACHLOOP"
+          DTS:Description="Contenedor de bucles Foreach"
+          DTS:DTSID="{B8050F44-051C-47CC-8666-41680A5443E5}"
+          DTS:ExecutableType="STOCK:FOREACHLOOP"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Contenedor de bucles Foreach">
+          <DTS:ForEachEnumerator
+            DTS:CreationName="Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachADOEnumerator, Microsoft.SqlServer.ForEachADOEnumerator, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+            DTS:DTSID="{57B9E14B-CC02-4B20-A7CE-2EDAC66B893E}"
+            DTS:ObjectName="{57B9E14B-CC02-4B20-A7CE-2EDAC66B893E}">
+            <DTS:ObjectData>
+              <FEEADO
+                EnumType="EnumerateRowsInFirstTable"
+                VarName="User::asignaturas" />
+            </DTS:ObjectData>
+          </DTS:ForEachEnumerator>
+          <DTS:Variables />
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc"
+              DTS:CreationName="STOCK:FOREACHLOOP"
+              DTS:Description="Contenedor de bucles Foreach"
+              DTS:DTSID="{BAA8067E-0CD1-4DD9-9304-9C453F41A79E}"
+              DTS:ExecutableType="STOCK:FOREACHLOOP"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="secc">
+              <DTS:ForEachEnumerator
+                DTS:CreationName="Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachADOEnumerator, Microsoft.SqlServer.ForEachADOEnumerator, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+                DTS:DTSID="{D264C612-4AA8-4E22-B414-22990BD532A7}"
+                DTS:ObjectName="{D264C612-4AA8-4E22-B414-22990BD532A7}">
+                <DTS:ObjectData>
+                  <FEEADO
+                    EnumType="EnumerateRowsInFirstTable"
+                    VarName="User::secciones" />
+                </DTS:ObjectData>
+              </DTS:ForEachEnumerator>
+              <DTS:Variables />
+              <DTS:Executables>
+                <DTS:Executable
+                  DTS:refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos"
+                  DTS:CreationName="SSIS.Pipeline.3"
+                  DTS:Description="Tarea Flujo de datos"
+                  DTS:DTSID="{4073CC2C-7659-4F83-8812-E6F9732C46D8}"
+                  DTS:ExecutableType="SSIS.Pipeline.3"
+                  DTS:LocaleID="-1"
+                  DTS:ObjectName="Tarea Flujo de datos"
+                  DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+                  <DTS:Variables />
+                  <DTS:ObjectData>
+                    <pipeline
+                      version="1">
+                      <components>
+                        <component
+                          refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada"
+                          componentClassID="DTSTransform.DerivedColumn.3"
+                          contactInfo="Columna derivada;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+                          description="Crea nuevos valores de columna aplicando expresiones a las columnas de entrada de la transformación. Crea nuevas columnas o sobrescribe las columnas existentes. Por ejemplo, se concatenan los valores de las columnas 'nombre' y 'apellidos' para crear una columna 'nombre completo'."
+                          name="Columna derivada"
+                          usesDispositions="true">
+                          <inputs>
+                            <input
+                              refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada.Inputs[Entrada de columna derivada]"
+                              description="Entrada en la transformación Columna derivada"
+                              name="Entrada de columna derivada">
+                              <externalMetadataColumns />
+                            </input>
+                          </inputs>
+                          <outputs>
+                            <output
+                              refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada.Outputs[Salida de columna derivada]"
+                              description="Salida predeterminada de la transformación Columna derivada"
+                              exclusionGroup="1"
+                              name="Salida de columna derivada"
+                              synchronousInputId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada.Inputs[Entrada de columna derivada]">
+                              <outputColumns>
+                                <outputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada.Outputs[Salida de columna derivada].Columns[anio]"
+                                  dataType="i4"
+                                  errorOrTruncationOperation="Cálculo"
+                                  errorRowDisposition="FailComponent"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada.Outputs[Salida de columna derivada].Columns[anio]"
+                                  name="anio"
+                                  truncationRowDisposition="FailComponent">
+                                  <properties>
+                                    <property
+                                      containsID="true"
+                                      dataType="System.String"
+                                      description="Expresión de columna derivada"
+                                      name="Expression">@[User::ANIO]</property>
+                                    <property
+                                      containsID="true"
+                                      dataType="System.String"
+                                      description="Expresión descriptiva de columna derivada"
+                                      expressionType="Notify"
+                                      name="FriendlyExpression">@[User::ANIO]</property>
+                                  </properties>
+                                </outputColumn>
+                                <outputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada.Outputs[Salida de columna derivada].Columns[vepe]"
+                                  dataType="i4"
+                                  errorOrTruncationOperation="Cálculo"
+                                  errorRowDisposition="FailComponent"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada.Outputs[Salida de columna derivada].Columns[vepe]"
+                                  name="vepe"
+                                  truncationRowDisposition="FailComponent">
+                                  <properties>
+                                    <property
+                                      containsID="true"
+                                      dataType="System.String"
+                                      description="Expresión de columna derivada"
+                                      name="Expression">@[User::VEPE]</property>
+                                    <property
+                                      containsID="true"
+                                      dataType="System.String"
+                                      description="Expresión descriptiva de columna derivada"
+                                      expressionType="Notify"
+                                      name="FriendlyExpression">@[User::VEPE]</property>
+                                  </properties>
+                                </outputColumn>
+                                <outputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada.Outputs[Salida de columna derivada].Columns[asig]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  errorOrTruncationOperation="Cálculo"
+                                  errorRowDisposition="FailComponent"
+                                  length="50"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada.Outputs[Salida de columna derivada].Columns[asig]"
+                                  name="asig"
+                                  truncationRowDisposition="FailComponent">
+                                  <properties>
+                                    <property
+                                      containsID="true"
+                                      dataType="System.String"
+                                      description="Expresión de columna derivada"
+                                      name="Expression">(DT_STR,50,1252)@[User::asignatura]</property>
+                                    <property
+                                      containsID="true"
+                                      dataType="System.String"
+                                      description="Expresión descriptiva de columna derivada"
+                                      expressionType="Notify"
+                                      name="FriendlyExpression">(DT_STR,50,1252)@[User::asignatura]</property>
+                                  </properties>
+                                </outputColumn>
+                                <outputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada.Outputs[Salida de columna derivada].Columns[secc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  errorOrTruncationOperation="Cálculo"
+                                  errorRowDisposition="FailComponent"
+                                  length="50"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada.Outputs[Salida de columna derivada].Columns[secc]"
+                                  name="secc"
+                                  truncationRowDisposition="FailComponent">
+                                  <properties>
+                                    <property
+                                      containsID="true"
+                                      dataType="System.String"
+                                      description="Expresión de columna derivada"
+                                      name="Expression">(DT_STR,50,1252)@[User::seccion]</property>
+                                    <property
+                                      containsID="true"
+                                      dataType="System.String"
+                                      description="Expresión descriptiva de columna derivada"
+                                      expressionType="Notify"
+                                      name="FriendlyExpression">(DT_STR,50,1252)@[User::seccion]</property>
+                                  </properties>
+                                </outputColumn>
+                              </outputColumns>
+                              <externalMetadataColumns />
+                            </output>
+                            <output
+                              refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada.Outputs[Salida de error de columna derivada]"
+                              description="Salida de error de la transformación Columna derivada"
+                              exclusionGroup="1"
+                              isErrorOut="true"
+                              name="Salida de error de columna derivada"
+                              synchronousInputId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada.Inputs[Entrada de columna derivada]">
+                              <outputColumns>
+                                <outputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                                  dataType="i4"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                                  name="ErrorCode"
+                                  specialFlags="1" />
+                                <outputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                                  dataType="i4"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                                  name="ErrorColumn"
+                                  specialFlags="2" />
+                              </outputColumns>
+                              <externalMetadataColumns />
+                            </output>
+                          </outputs>
+                        </component>
+                        <component
+                          refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada 1"
+                          componentClassID="DTSTransform.DerivedColumn.3"
+                          contactInfo="Columna derivada;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+                          description="Crea nuevos valores de columna aplicando expresiones a las columnas de entrada de la transformación. Crea nuevas columnas o sobrescribe las columnas existentes. Por ejemplo, se concatenan los valores de las columnas 'nombre' y 'apellidos' para crear una columna 'nombre completo'."
+                          name="Columna derivada 1"
+                          usesDispositions="true">
+                          <inputs>
+                            <input
+                              refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada 1.Inputs[Entrada de columna derivada]"
+                              description="Entrada en la transformación Columna derivada"
+                              name="Entrada de columna derivada">
+                              <externalMetadataColumns />
+                            </input>
+                          </inputs>
+                          <outputs>
+                            <output
+                              refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de columna derivada]"
+                              description="Salida predeterminada de la transformación Columna derivada"
+                              exclusionGroup="1"
+                              name="Salida de columna derivada"
+                              synchronousInputId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada 1.Inputs[Entrada de columna derivada]">
+                              <outputColumns>
+                                <outputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de columna derivada].Columns[anio]"
+                                  dataType="i4"
+                                  errorOrTruncationOperation="Cálculo"
+                                  errorRowDisposition="FailComponent"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de columna derivada].Columns[anio]"
+                                  name="anio"
+                                  truncationRowDisposition="FailComponent">
+                                  <properties>
+                                    <property
+                                      containsID="true"
+                                      dataType="System.String"
+                                      description="Expresión de columna derivada"
+                                      name="Expression">@[User::ANIO]</property>
+                                    <property
+                                      containsID="true"
+                                      dataType="System.String"
+                                      description="Expresión descriptiva de columna derivada"
+                                      expressionType="Notify"
+                                      name="FriendlyExpression">@[User::ANIO]</property>
+                                  </properties>
+                                </outputColumn>
+                                <outputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de columna derivada].Columns[vepe]"
+                                  dataType="i4"
+                                  errorOrTruncationOperation="Cálculo"
+                                  errorRowDisposition="FailComponent"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de columna derivada].Columns[vepe]"
+                                  name="vepe"
+                                  truncationRowDisposition="FailComponent">
+                                  <properties>
+                                    <property
+                                      containsID="true"
+                                      dataType="System.String"
+                                      description="Expresión de columna derivada"
+                                      name="Expression">@[User::VEPE]</property>
+                                    <property
+                                      containsID="true"
+                                      dataType="System.String"
+                                      description="Expresión descriptiva de columna derivada"
+                                      expressionType="Notify"
+                                      name="FriendlyExpression">@[User::VEPE]</property>
+                                  </properties>
+                                </outputColumn>
+                                <outputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de columna derivada].Columns[asig]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  errorOrTruncationOperation="Cálculo"
+                                  errorRowDisposition="FailComponent"
+                                  length="50"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de columna derivada].Columns[asig]"
+                                  name="asig"
+                                  truncationRowDisposition="FailComponent">
+                                  <properties>
+                                    <property
+                                      containsID="true"
+                                      dataType="System.String"
+                                      description="Expresión de columna derivada"
+                                      name="Expression">(DT_STR,50,1252)@[User::asignatura]</property>
+                                    <property
+                                      containsID="true"
+                                      dataType="System.String"
+                                      description="Expresión descriptiva de columna derivada"
+                                      expressionType="Notify"
+                                      name="FriendlyExpression">(DT_STR,50,1252)@[User::asignatura]</property>
+                                  </properties>
+                                </outputColumn>
+                                <outputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de columna derivada].Columns[secc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  errorOrTruncationOperation="Cálculo"
+                                  errorRowDisposition="FailComponent"
+                                  length="50"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de columna derivada].Columns[secc]"
+                                  name="secc"
+                                  truncationRowDisposition="FailComponent">
+                                  <properties>
+                                    <property
+                                      containsID="true"
+                                      dataType="System.String"
+                                      description="Expresión de columna derivada"
+                                      name="Expression">(DT_STR,50,1252)@[User::seccion]</property>
+                                    <property
+                                      containsID="true"
+                                      dataType="System.String"
+                                      description="Expresión descriptiva de columna derivada"
+                                      expressionType="Notify"
+                                      name="FriendlyExpression">(DT_STR,50,1252)@[User::seccion]</property>
+                                  </properties>
+                                </outputColumn>
+                              </outputColumns>
+                              <externalMetadataColumns />
+                            </output>
+                            <output
+                              refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de error de columna derivada]"
+                              description="Salida de error de la transformación Columna derivada"
+                              exclusionGroup="1"
+                              isErrorOut="true"
+                              name="Salida de error de columna derivada"
+                              synchronousInputId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada 1.Inputs[Entrada de columna derivada]">
+                              <outputColumns>
+                                <outputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                                  dataType="i4"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de error de columna derivada].Columns[ErrorCode]"
+                                  name="ErrorCode"
+                                  specialFlags="1" />
+                                <outputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                                  dataType="i4"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de error de columna derivada].Columns[ErrorColumn]"
+                                  name="ErrorColumn"
+                                  specialFlags="2" />
+                              </outputColumns>
+                              <externalMetadataColumns />
+                            </output>
+                          </outputs>
+                        </component>
+                        <component
+                          refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano"
+                          componentClassID="DTSAdapter.FlatFileDestination.3"
+                          contactInfo="Destino de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;0"
+                          description="Destino de archivo plano"
+                          localeId="3082"
+                          name="Destino de archivo plano">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Especifica si los datos sobrescriben el archivo de destino o se anexan al mismo."
+                              name="Overwrite">true</property>
+                            <property
+                              dataType="System.Null"
+                              description="Especifica el texto para escribir en el archivo de destino antes de escribir ningún dato."
+                              expressionType="Notify"
+                              name="Header" />
+                            <property
+                              dataType="System.Boolean"
+                              description="Cuando el calificador de texto está habilitado, especifica si este contendrá secuencias de escape o no en los datos escritos en el archivo de destino."
+                              name="EscapeQualifier">false</property>
+                          </properties>
+                          <connections>
+                            <connection
+                              refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Connections[FlatFileConnection]"
+                              connectionManagerID="Package.ConnectionManagers[error3]"
+                              connectionManagerRefId="Package.ConnectionManagers[error3]"
+                              name="FlatFileConnection" />
+                          </connections>
+                          <inputs>
+                            <input
+                              refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano]"
+                              hasSideEffects="true"
+                              name="Entrada de destino de archivo plano">
+                              <inputColumns>
+                                <inputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[vcurs_carr]"
+                                  cachedCodepage="1252"
+                                  cachedDataType="str"
+                                  cachedLength="3"
+                                  cachedName="vcurs_carr"
+                                  externalMetadataColumnId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[vcurs_carr]"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[vcurs_carr]" />
+                                <inputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[vcarr_desc]"
+                                  cachedCodepage="1252"
+                                  cachedDataType="str"
+                                  cachedLength="30"
+                                  cachedName="vcarr_desc"
+                                  externalMetadataColumnId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[vcarr_desc]"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[vcarr_desc]" />
+                                <inputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[vescu_codi]"
+                                  cachedCodepage="1252"
+                                  cachedDataType="str"
+                                  cachedLength="3"
+                                  cachedName="vescu_codi"
+                                  externalMetadataColumnId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[vescu_codi]"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[vescu_codi]" />
+                                <inputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[vescu_desc]"
+                                  cachedCodepage="1252"
+                                  cachedDataType="str"
+                                  cachedLength="60"
+                                  cachedName="vescu_desc"
+                                  externalMetadataColumnId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[vescu_desc]"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[vescu_desc]" />
+                                <inputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[vfacu_codi]"
+                                  cachedCodepage="1252"
+                                  cachedDataType="str"
+                                  cachedLength="2"
+                                  cachedName="vfacu_codi"
+                                  externalMetadataColumnId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[vfacu_codi]"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[vfacu_codi]" />
+                                <inputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[vfacu_desc]"
+                                  cachedCodepage="1252"
+                                  cachedDataType="str"
+                                  cachedLength="60"
+                                  cachedName="vfacu_desc"
+                                  externalMetadataColumnId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[vfacu_desc]"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[vfacu_desc]" />
+                                <inputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[ErrorCode]"
+                                  cachedDataType="i4"
+                                  cachedName="ErrorCode"
+                                  externalMetadataColumnId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[ErrorCode]"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]" />
+                                <inputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[ErrorColumn]"
+                                  cachedDataType="i4"
+                                  cachedName="ErrorColumn"
+                                  externalMetadataColumnId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[ErrorColumn]"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]" />
+                                <inputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[anio]"
+                                  cachedDataType="i4"
+                                  cachedName="anio"
+                                  externalMetadataColumnId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[anio]"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de columna derivada].Columns[anio]" />
+                                <inputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[vepe]"
+                                  cachedDataType="i4"
+                                  cachedName="vepe"
+                                  externalMetadataColumnId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[vepe]"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de columna derivada].Columns[vepe]" />
+                                <inputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[asig]"
+                                  cachedCodepage="1252"
+                                  cachedDataType="str"
+                                  cachedLength="50"
+                                  cachedName="asig"
+                                  externalMetadataColumnId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[asig]"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de columna derivada].Columns[asig]" />
+                                <inputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[secc]"
+                                  cachedCodepage="1252"
+                                  cachedDataType="str"
+                                  cachedLength="50"
+                                  cachedName="secc"
+                                  externalMetadataColumnId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[secc]"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de columna derivada].Columns[secc]" />
+                              </inputColumns>
+                              <externalMetadataColumns
+                                isUsed="True">
+                                <externalMetadataColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[vcurs_carr]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="3"
+                                  name="vcurs_carr" />
+                                <externalMetadataColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[vcarr_desc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="30"
+                                  name="vcarr_desc" />
+                                <externalMetadataColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[vescu_codi]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="3"
+                                  name="vescu_codi" />
+                                <externalMetadataColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[vescu_desc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="60"
+                                  name="vescu_desc" />
+                                <externalMetadataColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[vfacu_codi]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="2"
+                                  name="vfacu_codi" />
+                                <externalMetadataColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[vfacu_desc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="60"
+                                  name="vfacu_desc" />
+                                <externalMetadataColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[ErrorCode]"
+                                  dataType="i4"
+                                  name="ErrorCode" />
+                                <externalMetadataColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[ErrorColumn]"
+                                  dataType="i4"
+                                  name="ErrorColumn" />
+                                <externalMetadataColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[anio]"
+                                  dataType="i4"
+                                  name="anio" />
+                                <externalMetadataColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[vepe]"
+                                  dataType="i4"
+                                  name="vepe" />
+                                <externalMetadataColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[asig]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="50"
+                                  name="asig" />
+                                <externalMetadataColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[secc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="50"
+                                  name="secc" />
+                              </externalMetadataColumns>
+                            </input>
+                          </inputs>
+                        </component>
+                        <component
+                          refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB"
+                          componentClassID="DTSAdapter.OLEDBDestination.3"
+                          contactInfo="Destino de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+                          description="Destino de OLE DB"
+                          name="Destino de OLE DB"
+                          usesDispositions="true"
+                          version="4">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                              name="CommandTimeout">0</property>
+                            <property
+                              dataType="System.String"
+                              description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                              name="OpenRowset">[dbo].[UCSH_EstructuraAcademica]</property>
+                            <property
+                              dataType="System.String"
+                              description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                              name="OpenRowsetVariable"></property>
+                            <property
+                              dataType="System.String"
+                              description="Comando SQL para ejecutar."
+                              name="SqlCommand"
+                              UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                              name="DefaultCodePage">1252</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir caracteres."
+                              name="AlwaysUseDefaultCodePage">false</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                              name="AccessMode"
+                              typeConverter="AccessMode">3</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si los valores proporcionados para columnas de identidad se van a copiar al destino. Si es False, los valores de las columnas de identidad se generan automáticamente en el destino. Sólo se aplica si está activada la carga rápida."
+                              name="FastLoadKeepIdentity">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indica si las columnas que contienen NULL tendrán NULL insertado en el destino. Si es False, las columnas que contienen NULL tendrán sus valores predeterminados insertados en el destino. Sólo se aplica si está activada la carga rápida."
+                              name="FastLoadKeepNulls">false</property>
+                            <property
+                              dataType="System.String"
+                              description="Especifica opciones para usar con la carga rápida. Sólo se aplica si está activada la carga rápida."
+                              name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica cuándo se emiten confirmaciones durante la inserción de datos. El valor 0 especifica que se emitirá una confirmación al final de la inserción de datos. Sólo se aplica si está activada la carga rápida."
+                              name="FastLoadMaxInsertCommitSize">2147483647</property>
+                          </properties>
+                          <connections>
+                            <connection
+                              refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Connections[OleDbConnection]"
+                              connectionManagerID="Package.ConnectionManagers[192.168.1.157.DWHSource]"
+                              connectionManagerRefId="Package.ConnectionManagers[192.168.1.157.DWHSource]"
+                              description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                              name="OleDbConnection" />
+                          </connections>
+                          <inputs>
+                            <input
+                              refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+                              errorOrTruncationOperation="Insertar"
+                              errorRowDisposition="FailComponent"
+                              hasSideEffects="true"
+                              name="Entrada de destino de OLE DB">
+                              <inputColumns>
+                                <inputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[vcurs_carr]"
+                                  cachedCodepage="1252"
+                                  cachedDataType="str"
+                                  cachedLength="3"
+                                  cachedName="vcurs_carr"
+                                  externalMetadataColumnId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[vcurs_carr]"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[vcurs_carr]" />
+                                <inputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[vcarr_desc]"
+                                  cachedCodepage="1252"
+                                  cachedDataType="str"
+                                  cachedLength="30"
+                                  cachedName="vcarr_desc"
+                                  externalMetadataColumnId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[vcarr_desc]"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[vcarr_desc]" />
+                                <inputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[vescu_codi]"
+                                  cachedCodepage="1252"
+                                  cachedDataType="str"
+                                  cachedLength="3"
+                                  cachedName="vescu_codi"
+                                  externalMetadataColumnId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[vescu_codi]"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[vescu_codi]" />
+                                <inputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[vescu_desc]"
+                                  cachedCodepage="1252"
+                                  cachedDataType="str"
+                                  cachedLength="60"
+                                  cachedName="vescu_desc"
+                                  externalMetadataColumnId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[vescu_desc]"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[vescu_desc]" />
+                                <inputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[vfacu_codi]"
+                                  cachedCodepage="1252"
+                                  cachedDataType="str"
+                                  cachedLength="2"
+                                  cachedName="vfacu_codi"
+                                  externalMetadataColumnId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[vfacu_codi]"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[vfacu_codi]" />
+                                <inputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[vfacu_desc]"
+                                  cachedCodepage="1252"
+                                  cachedDataType="str"
+                                  cachedLength="60"
+                                  cachedName="vfacu_desc"
+                                  externalMetadataColumnId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[vfacu_desc]"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[vfacu_desc]" />
+                                <inputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[anio]"
+                                  cachedDataType="i4"
+                                  cachedName="anio"
+                                  externalMetadataColumnId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[anio]"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada.Outputs[Salida de columna derivada].Columns[anio]" />
+                                <inputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[vepe]"
+                                  cachedDataType="i4"
+                                  cachedName="vepe"
+                                  externalMetadataColumnId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[vepe]"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada.Outputs[Salida de columna derivada].Columns[vepe]" />
+                                <inputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[asig]"
+                                  cachedCodepage="1252"
+                                  cachedDataType="str"
+                                  cachedLength="50"
+                                  cachedName="asig"
+                                  externalMetadataColumnId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[asig]"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada.Outputs[Salida de columna derivada].Columns[asig]" />
+                                <inputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].Columns[secc]"
+                                  cachedCodepage="1252"
+                                  cachedDataType="str"
+                                  cachedLength="50"
+                                  cachedName="secc"
+                                  externalMetadataColumnId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[secc]"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada.Outputs[Salida de columna derivada].Columns[secc]" />
+                              </inputColumns>
+                              <externalMetadataColumns
+                                isUsed="True">
+                                <externalMetadataColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[vcurs_carr]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="3"
+                                  name="vcurs_carr" />
+                                <externalMetadataColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[vcarr_desc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="250"
+                                  name="vcarr_desc" />
+                                <externalMetadataColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[vescu_codi]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="3"
+                                  name="vescu_codi" />
+                                <externalMetadataColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[vescu_desc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="250"
+                                  name="vescu_desc" />
+                                <externalMetadataColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[vfacu_codi]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="2"
+                                  name="vfacu_codi" />
+                                <externalMetadataColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[vfacu_desc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="250"
+                                  name="vfacu_desc" />
+                                <externalMetadataColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[anio]"
+                                  dataType="i4"
+                                  name="anio" />
+                                <externalMetadataColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[vepe]"
+                                  dataType="i4"
+                                  name="vepe" />
+                                <externalMetadataColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[asig]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="50"
+                                  name="asig" />
+                                <externalMetadataColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB].ExternalColumns[secc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="50"
+                                  name="secc" />
+                              </externalMetadataColumns>
+                            </input>
+                          </inputs>
+                          <outputs>
+                            <output
+                              refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB]"
+                              exclusionGroup="1"
+                              isErrorOut="true"
+                              name="Salida de error de destino de OLE DB"
+                              synchronousInputId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]">
+                              <outputColumns>
+                                <outputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                                  dataType="i4"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorCode]"
+                                  name="ErrorCode"
+                                  specialFlags="1" />
+                                <outputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                                  dataType="i4"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Outputs[Salida de error de destino de OLE DB].Columns[ErrorColumn]"
+                                  name="ErrorColumn"
+                                  specialFlags="2" />
+                              </outputColumns>
+                              <externalMetadataColumns />
+                            </output>
+                          </outputs>
+                        </component>
+                        <component
+                          refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB"
+                          componentClassID="DTSAdapter.OLEDBSource.3"
+                          contactInfo="Origen de OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;7"
+                          description="Origen de OLE DB"
+                          name="Origen de OLE DB"
+                          usesDispositions="true"
+                          version="7">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                              name="CommandTimeout">0</property>
+                            <property
+                              dataType="System.String"
+                              description="Especifica el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                              name="OpenRowset"></property>
+                            <property
+                              dataType="System.String"
+                              description="Especifica la variable que contiene el nombre del objeto de base de datos usado para abrir un conjunto de filas."
+                              name="OpenRowsetVariable"></property>
+                            <property
+                              dataType="System.String"
+                              description="Comando SQL para ejecutar."
+                              name="SqlCommand"
+                              UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">execute procedure ifx_nueva_estruc_acad(?,?,?,?)</property>
+                            <property
+                              dataType="System.String"
+                              description="Variable que contiene el comando SQL para ejecutar."
+                              name="SqlCommandVariable"></property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica la página de códigos de columna para utilizar cuando la información de página de códigos no está disponible en el origen de datos."
+                              name="DefaultCodePage">1252</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Fuerza el uso del valor de la propiedad DefaultCodePage al describir caracteres."
+                              name="AlwaysUseDefaultCodePage">false</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Especifica el modo utilizado para obtener acceso a la base de datos."
+                              name="AccessMode"
+                              typeConverter="AccessMode">2</property>
+                            <property
+                              dataType="System.String"
+                              description="Asignaciones entre los parámetros del comando SQL y las variables."
+                              name="ParameterMapping">"Parámetro0:Input",{50637FBD-43A7-4AA6-8D2F-A7E968BBD207};"Parámetro1:Input",{8B72E2FF-0DC7-4DA6-AE1F-370C8FF269B4};"Parámetro2:Input",{534B17BD-AC39-451A-87F2-A5AB90DEB5E4};"Parámetro3:Input",{275F0B5D-D059-4E11-A20E-E8FAEAAA0FFE};</property>
+                          </properties>
+                          <connections>
+                            <connection
+                              refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Connections[OleDbConnection]"
+                              connectionManagerID="Package.ConnectionManagers[ucsh@saes_soc.informix]"
+                              connectionManagerRefId="Package.ConnectionManagers[ucsh@saes_soc.informix]"
+                              description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
+                              name="OleDbConnection" />
+                          </connections>
+                          <outputs>
+                            <output
+                              refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB]"
+                              name="Salida de origen de OLE DB">
+                              <outputColumns>
+                                <outputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[vcurs_carr]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  errorOrTruncationOperation="Conversión"
+                                  errorRowDisposition="RedirectRow"
+                                  externalMetadataColumnId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[vcurs_carr]"
+                                  length="3"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[vcurs_carr]"
+                                  name="vcurs_carr"
+                                  truncationRowDisposition="RedirectRow" />
+                                <outputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[vcarr_desc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  errorOrTruncationOperation="Conversión"
+                                  errorRowDisposition="RedirectRow"
+                                  externalMetadataColumnId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[vcarr_desc]"
+                                  length="30"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[vcarr_desc]"
+                                  name="vcarr_desc"
+                                  truncationRowDisposition="RedirectRow" />
+                                <outputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[vescu_codi]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  errorOrTruncationOperation="Conversión"
+                                  errorRowDisposition="RedirectRow"
+                                  externalMetadataColumnId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[vescu_codi]"
+                                  length="3"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[vescu_codi]"
+                                  name="vescu_codi"
+                                  truncationRowDisposition="RedirectRow" />
+                                <outputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[vescu_desc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  errorOrTruncationOperation="Conversión"
+                                  errorRowDisposition="RedirectRow"
+                                  externalMetadataColumnId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[vescu_desc]"
+                                  length="60"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[vescu_desc]"
+                                  name="vescu_desc"
+                                  truncationRowDisposition="RedirectRow" />
+                                <outputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[vfacu_codi]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  errorOrTruncationOperation="Conversión"
+                                  errorRowDisposition="RedirectRow"
+                                  externalMetadataColumnId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[vfacu_codi]"
+                                  length="2"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[vfacu_codi]"
+                                  name="vfacu_codi"
+                                  truncationRowDisposition="RedirectRow" />
+                                <outputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[vfacu_desc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  errorOrTruncationOperation="Conversión"
+                                  errorRowDisposition="RedirectRow"
+                                  externalMetadataColumnId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[vfacu_desc]"
+                                  length="60"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].Columns[vfacu_desc]"
+                                  name="vfacu_desc"
+                                  truncationRowDisposition="RedirectRow" />
+                              </outputColumns>
+                              <externalMetadataColumns
+                                isUsed="True">
+                                <externalMetadataColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[vcurs_carr]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="3"
+                                  name="vcurs_carr" />
+                                <externalMetadataColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[vcarr_desc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="30"
+                                  name="vcarr_desc" />
+                                <externalMetadataColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[vescu_codi]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="3"
+                                  name="vescu_codi" />
+                                <externalMetadataColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[vescu_desc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="60"
+                                  name="vescu_desc" />
+                                <externalMetadataColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[vfacu_codi]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="2"
+                                  name="vfacu_codi" />
+                                <externalMetadataColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB].ExternalColumns[vfacu_desc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="60"
+                                  name="vfacu_desc" />
+                              </externalMetadataColumns>
+                            </output>
+                            <output
+                              refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB]"
+                              isErrorOut="true"
+                              name="Salida de error de origen de OLE DB">
+                              <outputColumns>
+                                <outputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[vcurs_carr]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="3"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[vcurs_carr]"
+                                  name="vcurs_carr" />
+                                <outputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[vcarr_desc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="30"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[vcarr_desc]"
+                                  name="vcarr_desc" />
+                                <outputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[vescu_codi]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="3"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[vescu_codi]"
+                                  name="vescu_codi" />
+                                <outputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[vescu_desc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="60"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[vescu_desc]"
+                                  name="vescu_desc" />
+                                <outputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[vfacu_codi]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="2"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[vfacu_codi]"
+                                  name="vfacu_codi" />
+                                <outputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[vfacu_desc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="60"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[vfacu_desc]"
+                                  name="vfacu_desc" />
+                                <outputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                                  dataType="i4"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorCode]"
+                                  name="ErrorCode"
+                                  specialFlags="1" />
+                                <outputColumn
+                                  refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                                  dataType="i4"
+                                  lineageId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB].Columns[ErrorColumn]"
+                                  name="ErrorColumn"
+                                  specialFlags="2" />
+                              </outputColumns>
+                              <externalMetadataColumns />
+                            </output>
+                          </outputs>
+                        </component>
+                      </components>
+                      <paths>
+                        <path
+                          refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos.Paths[Salida de columna derivada]"
+                          endId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB.Inputs[Entrada de destino de OLE DB]"
+                          name="Salida de columna derivada"
+                          startId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada.Outputs[Salida de columna derivada]" />
+                        <path
+                          refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos.Paths[Salida de columna derivada1]"
+                          endId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano]"
+                          name="Salida de columna derivada"
+                          startId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada 1.Outputs[Salida de columna derivada]" />
+                        <path
+                          refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos.Paths[Salida de error de origen de OLE DB]"
+                          endId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada 1.Inputs[Entrada de columna derivada]"
+                          name="Salida de error de origen de OLE DB"
+                          startId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de error de origen de OLE DB]" />
+                        <path
+                          refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos.Paths[Salida de origen de OLE DB]"
+                          endId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada.Inputs[Entrada de columna derivada]"
+                          name="Salida de origen de OLE DB"
+                          startId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB.Outputs[Salida de origen de OLE DB]" />
+                      </paths>
+                    </pipeline>
+                  </DTS:ObjectData>
+                </DTS:Executable>
+              </DTS:Executables>
+              <DTS:ForEachVariableMappings>
+                <DTS:ForEachVariableMapping
+                  DTS:CreationName=""
+                  DTS:DTSID="{1FBCCF2C-3A93-43D1-8F99-C87ABBD58ABE}"
+                  DTS:ObjectName="{1FBCCF2C-3A93-43D1-8F99-C87ABBD58ABE}"
+                  DTS:ValueIndex="0"
+                  DTS:VariableName="User::seccion" />
+              </DTS:ForEachVariableMappings>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\Tarea Ejecutar SQL"
+              DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+              DTS:Description="Tarea Ejecutar SQL"
+              DTS:DTSID="{9CF5D818-EE2A-416E-A7B8-A62687BEA9FE}"
+              DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Tarea Ejecutar SQL"
+              DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+              DTS:ThreadHint="0">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{4361759D-9C9B-4593-B07E-2CCD45DBB4A9}"
+                  SQLTask:SqlStatementSource="select distinct curs_secc as seccion&#xA;FROM aacurs&#xA;where  curs_anoa = ?&#xA;and curs_vepe = ?&#xA;and curs_asig = ?&#xA;&#xA;order by seccion asc"
+                  SQLTask:ResultType="ResultSetType_Rowset" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+                  <SQLTask:ResultBinding
+                    SQLTask:ResultName="0"
+                    SQLTask:DtsVariableName="User::secciones" />
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="0"
+                    SQLTask:DtsVariableName="User::ANIO"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="3"
+                    SQLTask:ParameterSize="-1" />
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="1"
+                    SQLTask:DtsVariableName="User::VEPE"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="3"
+                    SQLTask:ParameterSize="-1" />
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="2"
+                    SQLTask:DtsVariableName="User::asignatura"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="129"
+                    SQLTask:ParameterSize="-1" />
+                </SQLTask:SqlTaskData>
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+          <DTS:PrecedenceConstraints>
+            <DTS:PrecedenceConstraint
+              DTS:refId="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach.PrecedenceConstraints[Restricción]"
+              DTS:CreationName=""
+              DTS:DTSID="{748F6E70-C1E6-4BCA-9F03-98567EFA4C2A}"
+              DTS:From="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\Tarea Ejecutar SQL"
+              DTS:LogicalAnd="True"
+              DTS:ObjectName="Restricción"
+              DTS:To="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc" />
+          </DTS:PrecedenceConstraints>
+          <DTS:ForEachVariableMappings>
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{D77C3EF3-DEEC-4A52-A31C-9952D8221FF6}"
+              DTS:ObjectName="{D77C3EF3-DEEC-4A52-A31C-9952D8221FF6}"
+              DTS:ValueIndex="0"
+              DTS:VariableName="User::asignatura" />
+          </DTS:ForEachVariableMappings>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Contenedor de secuencias 7\Tarea Ejecutar SQL"
+          DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+          DTS:Description="Tarea Ejecutar SQL"
+          DTS:DTSID="{D832ADDF-0D49-4B05-9E90-63A681C19A5D}"
+          DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Tarea Ejecutar SQL"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{4361759D-9C9B-4593-B07E-2CCD45DBB4A9}"
+              SQLTask:SqlStatementSource="select distinct curs_asig as curs_asig_secc&#xA;FROM aacurs&#xA;where  curs_anoa = ?&#xA;and curs_vepe = ?&#xA;"
+              SQLTask:ResultType="ResultSetType_Rowset" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ResultBinding
+                SQLTask:ResultName="0"
+                SQLTask:DtsVariableName="User::asignaturas" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="User::ANIO"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="3"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="1"
+                SQLTask:DtsVariableName="User::VEPE"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="3"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Contenedor de secuencias 7.PrecedenceConstraints[Restricción]"
+          DTS:CreationName=""
+          DTS:DTSID="{EE9F18AB-761A-4C2D-A1C1-06B93FFA48FE}"
+          DTS:From="Package\Contenedor de secuencias 7\Tarea Ejecutar SQL"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Restricción"
+          DTS:To="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Ejecutar SQL"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{A8A00576-8757-4A92-9E15-43611C8B7A74}"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Ejecutar SQL"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{4361759D-9C9B-4593-B07E-2CCD45DBB4A9}"
+          SQLTask:SqlStatementSource="select para_anoa, para_vepe from aapara"
+          SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="0"
+            SQLTask:DtsVariableName="User::ANIO" />
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="1"
+            SQLTask:DtsVariableName="User::VEPE" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Ejecutar SQL 1 1"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:DTSID="{4A355349-0456-4864-8EF8-DC7E9C58F929}"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Ejecutar SQL 1 1"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{3DD4A15D-2E53-42CE-9C9E-2A36CE16C93E}"
+          SQLTask:SqlStatementSource="delete from [dbo].[UCSH_EstructuraAcademica] where anio =@anio and vepe =@vepe" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="@anio"
+            SQLTask:DtsVariableName="User::ANIO"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="@vepe"
+            SQLTask:DtsVariableName="User::VEPE"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Ejecutar SQL 4"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:Description="Tarea Ejecutar SQL"
+      DTS:Disabled="True"
+      DTS:DTSID="{7B584D6E-8F96-4B97-9E13-FAB89ACE97E8}"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Ejecutar SQL 4"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{29CEF6A8-5C2B-43AD-A89A-EB9F8A52BDE3}"
+          SQLTask:SqlStatementSource="&#xA;if exists (select top 1 * from  [dbo].[UCSH_EstructuraAcademica] where anio =? and vepe =?)&#xA;begin  select 1  end&#xA;else begin select 0 end"
+          SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="0"
+            SQLTask:DtsVariableName="User::con_estructura" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="User::ANIO"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="1"
+            SQLTask:DtsVariableName="User::VEPE"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción]"
+      DTS:CreationName=""
+      DTS:DTSID="{5CA9345A-878E-4429-872C-E5B860F95D1C}"
+      DTS:From="Package\Tarea Ejecutar SQL"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción"
+      DTS:To="Package\Tarea Ejecutar SQL 4" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{99972E47-E49E-4123-8762-DE805E848595}"
+      DTS:From="Package\Tarea Ejecutar SQL 1 1"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 1"
+      DTS:To="Package\Contenedor de secuencias 7" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Restricción 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{20CA9661-83D3-4FE5-A705-2B13A0894ABB}"
+      DTS:EvalOp="1"
+      DTS:Expression="@[User::con_estructura]==0"
+      DTS:From="Package\Tarea Ejecutar SQL 4"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Restricción 2"
+      DTS:To="Package\Tarea Ejecutar SQL 1 1" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="sql11">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="176,42"
+          Id="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos"
+          TopLeft="16.704762277798,16.3215690564392" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="205,113"
+          Size="205,156"
+          Id="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc"
+          TopLeft="49.1238156464635,120.133343421712" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\Tarea Ejecutar SQL"
+          TopLeft="56.1142960295388,33.4274597031572" />
+        <EdgeLayout
+          Id="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach.PrecedenceConstraints[Restricción]"
+          TopLeft="140.914296029539,75.0274597031572">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="10.6095196169247,45.1058837185548"
+              Start="0,0"
+              End="10.6095196169247,37.6058837185548">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.5529418592774" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.5529418592774"
+                    Point2="0,22.5529418592774"
+                    Point3="4,22.5529418592774" />
+                  <mssgle:LineSegment
+                    End="6.6095196169247,22.5529418592774" />
+                  <mssgle:CubicBezierSegment
+                    Point1="6.6095196169247,22.5529418592774"
+                    Point2="10.6095196169247,22.5529418592774"
+                    Point3="10.6095196169247,26.5529418592774" />
+                  <mssgle:LineSegment
+                    End="10.6095196169247,37.6058837185548" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="282,331"
+          Size="282,374"
+          Id="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach"
+          TopLeft="44.3095231932052,147.5" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Contenedor de secuencias 7\Tarea Ejecutar SQL"
+          TopLeft="140.500000000001,45" />
+        <EdgeLayout
+          Id="Package\Contenedor de secuencias 7.PrecedenceConstraints[Restricción]"
+          TopLeft="225.300000000001,86.6">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-40.1904768067958,60.9"
+              Start="0,0"
+              End="-40.1904768067958,53.4">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.45" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.45"
+                    Point2="0,30.45"
+                    Point3="-4,30.45" />
+                  <mssgle:LineSegment
+                    End="-36.1904768067958,30.45" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-36.1904768067958,30.45"
+                    Point2="-40.1904768067958,30.45"
+                    Point3="-40.1904768067958,34.45" />
+                  <mssgle:LineSegment
+                    End="-40.1904768067958,53.4" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="402,595"
+          Size="402,638"
+          Id="Package\Contenedor de secuencias 7"
+          TopLeft="505.952382485072,365.47619047619" />
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Tarea Ejecutar SQL"
+          TopLeft="555.714287246977,78.5714285714286" />
+        <NodeLayout
+          Size="188,42"
+          Id="Package\Tarea Ejecutar SQL 1 1"
+          TopLeft="545.714287246977,222.857142857143" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Tarea Ejecutar SQL 4"
+          TopLeft="800.000001532691,114.285714285714" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción]"
+          TopLeft="725.714287246977,99.5714285714286">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="74.285714285714,35.7142857142854"
+              Start="0,0"
+              End="66.785714285714,35.7142857142854">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="33.142857142857,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="33.142857142857,0"
+                    Point2="37.142857142857,0"
+                    Point3="37.142857142857,4" />
+                  <mssgle:LineSegment
+                    End="37.142857142857,31.7142857142854" />
+                  <mssgle:CubicBezierSegment
+                    Point1="37.142857142857,31.7142857142854"
+                    Point2="37.142857142857,35.7142857142854"
+                    Point3="41.142857142857,35.7142857142854" />
+                  <mssgle:LineSegment
+                    End="66.785714285714,35.7142857142854" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 1]"
+          TopLeft="639.714287246977,264.457142857143">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="67.038095238095,101.019047619047"
+              Start="0,0"
+              End="67.038095238095,93.5190476190469">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,46.5095238095235" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,46.5095238095235"
+                    Point2="0,50.5095238095235"
+                    Point3="4,50.5095238095235" />
+                  <mssgle:LineSegment
+                    End="63.038095238095,50.5095238095235" />
+                  <mssgle:CubicBezierSegment
+                    Point1="63.038095238095,50.5095238095235"
+                    Point2="67.038095238095,50.5095238095235"
+                    Point3="67.038095238095,54.5095238095235" />
+                  <mssgle:LineSegment
+                    End="67.038095238095,93.5190476190469" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Restricción 2]"
+          TopLeft="889.500001532691,156.285714285714">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-249.785714285714,66.571428571429"
+              Start="0,0"
+              End="-249.785714285714,59.071428571429">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.2857142857145" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29.2857142857145"
+                    Point2="0,33.2857142857145"
+                    Point3="-4,33.2857142857145" />
+                  <mssgle:LineSegment
+                    End="-245.785714285714,33.2857142857145" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-245.785714285714,33.2857142857145"
+                    Point2="-249.785714285714,33.2857142857145"
+                    Point3="-249.785714285714,37.2857142857145" />
+                  <mssgle:LineSegment
+                    End="-249.785714285714,59.071428571429" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-132.892857142857,38.2857142857145,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada 1"
+          TopLeft="470.285722022154,212.588238275587" />
+        <NodeLayout
+          Size="195,42"
+          Id="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de archivo plano"
+          TopLeft="493.80953221905,348.196083314691" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB"
+          TopLeft="255.238099584774,101.960785743687" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Columna derivada"
+          TopLeft="230.952384885477,219.725493277646" />
+        <NodeLayout
+          Size="168,42"
+          Id="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB"
+          TopLeft="226.190480042477,334.941181168012" />
+        <EdgeLayout
+          Id="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos.Paths[Salida de columna derivada1]"
+          TopLeft="551.885722022154,254.188238275587">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="39.5238101968962,94.0078450391037"
+              Start="0,0"
+              End="39.5238101968962,86.5078450391037">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.0039225195519" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,43.0039225195519"
+                    Point2="0,47.0039225195519"
+                    Point3="4,47.0039225195519" />
+                  <mssgle:LineSegment
+                    End="35.5238101968962,47.0039225195519" />
+                  <mssgle:CubicBezierSegment
+                    Point1="35.5238101968962,47.0039225195519"
+                    Point2="39.5238101968962,47.0039225195519"
+                    Point3="39.5238101968962,51.0039225195519" />
+                  <mssgle:LineSegment
+                    End="39.5238101968962,86.5078450391037" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos.Paths[Salida de columna derivada]"
+          TopLeft="311.371432463977,261.325493277646">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,73.6156878903662"
+              Start="0,0"
+              End="0,66.1156878903662">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,66.1156878903662" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos.Paths[Salida de origen de OLE DB]"
+          TopLeft="336.838099584774,143.560785743687">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-24.2857146992976,76.1647075339585"
+              Start="0,0"
+              End="-24.2857146992976,68.6647075339585">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.0823537669792" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.0823537669792"
+                    Point2="0,38.0823537669792"
+                    Point3="-4,38.0823537669792" />
+                  <mssgle:LineSegment
+                    End="-20.2857146992976,38.0823537669792" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-20.2857146992976,38.0823537669792"
+                    Point2="-24.2857146992976,38.0823537669792"
+                    Point3="-24.2857146992976,42.0823537669792" />
+                  <mssgle:LineSegment
+                    End="-24.2857146992976,68.6647075339585" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos.Paths[Salida de error de origen de OLE DB]"
+          TopLeft="362.704766251441,143.560785743687">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="189.180955770713,69.0274525319004"
+              Start="0,0"
+              End="189.180955770713,61.5274525319004">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.0130826779945" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.0130826779945"
+                    Point2="0,28.0130826779945"
+                    Point3="4,28.0130826779945" />
+                  <mssgle:LineSegment
+                    End="185.180955770713,28.0130826779945" />
+                  <mssgle:CubicBezierSegment
+                    Point1="185.180955770713,28.0130826779945"
+                    Point2="189.180955770713,28.0130826779945"
+                    Point3="189.180955770713,32.0130826779945" />
+                  <mssgle:LineSegment
+                    End="189.180955770713,61.5274525319004" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="13.8989935103565,33.0130826779945,161.38296875,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Destino de OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Contenedor de secuencias 7\Contenedor de bucles Foreach\secc\Tarea Flujo de datos\Origen de OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
