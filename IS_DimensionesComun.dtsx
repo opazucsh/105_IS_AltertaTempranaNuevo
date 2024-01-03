@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="IS_DimensionesComun"
   DTS:PackageType="5"
-  DTS:VersionBuild="314"
-  DTS:VersionGUID="{171C6B81-7006-4449-BEA3-9A1E874C5858}">
+  DTS:VersionBuild="315"
+  DTS:VersionGUID="{A5ED1DC4-BF28-4861-BDCA-4DC681896E8C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -111,7 +111,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVLCudRjya0WCX6A6ygDDbAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACdKo62Eao+v40eYXsPPRHrAAAAAASAAACgAAAAEAAAAKaXGAydBVmXx//nGvtQ5X4QAAAAarX8b8OaURGr09qMmdBMnhQAAAAkiF6tDKQ1FJGBDSEHRu3nHqaB4g</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv5Ski4UmcUuTeiKmBc3dcQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAA7FgSrR4lujB5Tqq4lV6hgAAAAAASAAACgAAAAEAAAAM8Iqzmno965ZfCcnX4psxAQAAAAo+ePvLBeZhCx2hGhxism/BQAAADQ+TLdNx5CRb3io1JN89M40UFTGA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -126,7 +126,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVLCudRjya0WCX6A6ygDDbAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABPaM/5Lf7nMgRpqLNNN3xbAAAAAASAAACgAAAAEAAAAHsa8muGLSHWm7qBIuYHrnUYAAAAYgCNNZgWI5TY253m9Lh2DnpuYhO1FHKhFAAAAFFx8f3LEdFRZddtCBxPuuy2AM57</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv5Ski4UmcUuTeiKmBc3dcQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACKK9BROAdkLFK/eOIKCO7VAAAAAASAAACgAAAAEAAAAPOKHLqaSNlAxNgTdy4NZUEYAAAA3VFq0rARynYaakBEiRnGo7G7/PEr1peeFAAAAKT/GhuWh2hW+95GAnO1M0Hi07H/</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -143,7 +143,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVLCudRjya0WCX6A6ygDDbAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAA3nnuyzjB6eL+ST9RrbKz4AAAAAASAAACgAAAAEAAAAGqyPZwrkhAcV5Yxk0GGAY8YAAAAlaZOSTQOx0g8WyNv1ojP+E+vpz3HF7WZFAAAAAGyeAMG+FJei/pIBsO5lSIr4cfu</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv5Ski4UmcUuTeiKmBc3dcQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB2OkC74LNOVJSxvoKHVoZeAAAAAASAAACgAAAAEAAAAMbKX7mOxY+PXQElgiv3KB4YAAAAwdhtdEyi66YXb4jTdE6u/jUmTGLzXpoqFAAAAOYNd7KitkJH55UA5nMiH99oYcuH</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -160,7 +160,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVLCudRjya0WCX6A6ygDDbAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACE13LQJXIybSCBSlxZ5nDuAAAAAASAAACgAAAAEAAAAOEMQlZJXLMJuSYDM+nOhWMYAAAAHkZMGCh3w9rA5SuyR2QHrwRKb6lqGhkpFAAAALkY1VJWqbGL6XXavsBoEv5YcNZ1</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv5Ski4UmcUuTeiKmBc3dcQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABW4t/Fe49lfSFswRfwj01cAAAAAASAAACgAAAAEAAAAJZ1ISsizinuQUaf2st518cYAAAASsTGo0zMoBmUanK4j6ydtHeVP4x5pba5FAAAAIIvOwF739oMsFItpe0az75qXhtA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -287,11 +287,11 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=ucsh@saes_soc;User ID=informix;Provider=Ifxoledbc.4;Persist Security Info=True;">
+          DTS:ConnectionString="Data Source=ucsh@saes_soc;User ID=ifxprod;Provider=Ifxoledbc.4;Persist Security Info=True;">
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVLCudRjya0WCX6A6ygDDbAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABr8oROMiWWyaqNRQLJF9yzAAAAAASAAACgAAAAEAAAAH1/WmV14ep1QGH8Iu7CIjMYAAAAbym78pyyGxKisK8/fCN20ckp/0amcos9FAAAAB5ShcBhu5ERbeptEtzEyqmmVOsK</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAv5Ski4UmcUuTeiKmBc3dcQAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADDGhYZG36VgfuVZZriGWUaAAAAAASAAACgAAAAEAAAAHvntGz5EauK+EkNbyyS0ocYAAAAD6d8sLWRPybh/9NMKKVpvKddWcHXEKE6FAAAAONE26Ws8SWwm2O0dBoh7Z8J/wFN</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1800,7 +1800,7 @@ order by z.udus_fech desc</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute SQL Task"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="5">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -1839,7 +1839,7 @@ order by z.udus_fech desc</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Tarea Ejecutar SQL"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="6">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -1863,7 +1863,7 @@ order by z.udus_fech desc</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Tarea Ejecutar SQL 1"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="6">
+          DTS:ThreadHint="1">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -2818,7 +2818,7 @@ WHERE n &lt;= DATEDIFF(DAY, @fDesde, @fHasta) + 1</property>
           DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
           DTS:LocaleID="-1"
           DTS:ObjectName="Execute SQL Task"
-          DTS:ThreadHint="4">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -3737,7 +3737,7 @@ WHERE n &lt;= DATEDIFF(DAY, @fDesde, @fHasta) + 1</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Actualizacion y limpieza de datos"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="3">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -3754,7 +3754,7 @@ WHERE n &lt;= DATEDIFF(DAY, @fDesde, @fHasta) + 1</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Borra Source"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="3">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -3771,7 +3771,7 @@ WHERE n &lt;= DATEDIFF(DAY, @fDesde, @fHasta) + 1</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Borra Staging"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="3">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -3788,7 +3788,7 @@ WHERE n &lt;= DATEDIFF(DAY, @fDesde, @fHasta) + 1</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Obtiene Ultimo SK"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="2">
+          DTS:ThreadHint="3">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -8385,7 +8385,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           DTS:LocaleID="-1"
           DTS:ObjectName="Actualizacion y limpieza de datos"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="4">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -8402,7 +8402,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           DTS:LocaleID="-1"
           DTS:ObjectName="Borra Source"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="4">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -8419,7 +8419,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           DTS:LocaleID="-1"
           DTS:ObjectName="Borra Staging"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="4">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -8436,7 +8436,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           DTS:LocaleID="-1"
           DTS:ObjectName="Crea PCU Staging"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="4">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -8453,7 +8453,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           DTS:LocaleID="-1"
           DTS:ObjectName="Obtiene Ultimo SK"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="4">
+          DTS:ThreadHint="2">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -14636,7 +14636,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           DTS:LocaleID="-1"
           DTS:ObjectName="Actualizacion y limpieza de datos"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="5">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -14653,7 +14653,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           DTS:LocaleID="-1"
           DTS:ObjectName="Borra Source"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="5">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -14670,7 +14670,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           DTS:LocaleID="-1"
           DTS:ObjectName="Borra Staging"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="5">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -14687,7 +14687,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           DTS:LocaleID="-1"
           DTS:ObjectName="Obtiene Ultimo SK"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="5">
+          DTS:ThreadHint="0">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -16818,7 +16818,7 @@ inner join UCSH_ADPERS pers on  pers.pers_rutp=prof.prof_rut</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Actualizacion y limpieza de datos"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -16835,7 +16835,7 @@ inner join UCSH_ADPERS pers on  pers.pers_rutp=prof.prof_rut</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Borra Source"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -16852,7 +16852,7 @@ inner join UCSH_ADPERS pers on  pers.pers_rutp=prof.prof_rut</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Borra Staging"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -16869,7 +16869,7 @@ inner join UCSH_ADPERS pers on  pers.pers_rutp=prof.prof_rut</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Obtiene Ultimo SK"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -16891,7 +16891,7 @@ inner join UCSH_ADPERS pers on  pers.pers_rutp=prof.prof_rut</property>
           DTS:LocaleID="-1"
           DTS:ObjectName="Tarea Ejecutar SQL"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="4">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -19701,7 +19701,7 @@ where (alum_nmat is not null) and (alum_nmat not in (2712829,9612682,2422009,262
           DTS:LocaleID="-1"
           DTS:ObjectName="Acutalizacion y limpieza de datos"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="5">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -19718,7 +19718,7 @@ where (alum_nmat is not null) and (alum_nmat not in (2712829,9612682,2422009,262
           DTS:LocaleID="-1"
           DTS:ObjectName="Borra Staging"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="5">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -19735,7 +19735,7 @@ where (alum_nmat is not null) and (alum_nmat not in (2712829,9612682,2422009,262
           DTS:LocaleID="-1"
           DTS:ObjectName="OBtiene altimo SK"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="1">
+          DTS:ThreadHint="5">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -21539,7 +21539,7 @@ left join DWHSource.dbo.UCSH_AACAPC on (capc_anoa=paca_anoa and capc_vepe=paca_v
           DTS:LocaleID="-1"
           DTS:ObjectName="Limpia datos"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="3">
+          DTS:ThreadHint="6">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -21556,7 +21556,7 @@ left join DWHSource.dbo.UCSH_AACAPC on (capc_anoa=paca_anoa and capc_vepe=paca_v
           DTS:LocaleID="-1"
           DTS:ObjectName="Limpia Source"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="3">
+          DTS:ThreadHint="6">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData
@@ -21573,7 +21573,7 @@ left join DWHSource.dbo.UCSH_AACAPC on (capc_anoa=paca_anoa and capc_vepe=paca_v
           DTS:LocaleID="-1"
           DTS:ObjectName="Obtiene Ultimo SK"
           DTS:TaskContact="Execute SQL Task; Microsoft Corporation; Microsoft SQL Server 2008 R2; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="3">
+          DTS:ThreadHint="6">
           <DTS:Variables />
           <DTS:ObjectData>
             <SQLTask:SqlTaskData

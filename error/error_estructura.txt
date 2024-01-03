@@ -1,0 +1,1 @@
+vcurs_carr,vcarr_desc,vescu_codi,vescu_desc,vfacu_codi,vfacu_desc,ErrorCode,ErrorColumn,anio,vepe,asig,secc
